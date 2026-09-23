@@ -304,15 +304,13 @@ button:focus-visible {
   align-items: start;
 }
 
-.project-title-row,
-.card-top {
+.project-title-row {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.project-mark,
-.mini-mark {
+.project-mark {
   display: grid;
   place-items: center;
   flex: 0 0 auto;
@@ -330,19 +328,6 @@ button:focus-visible {
   font-size: 2.4rem;
 }
 
-.mini-mark {
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
-  font-size: 1.45rem;
-}
-
-.mini-mark.muted {
-  color: #b9d4e3;
-  background: #102439;
-  border-color: #2a5875;
-  box-shadow: none;
-}
 
 .project-intro h2 {
   margin: 0;
@@ -437,63 +422,6 @@ button:focus-visible {
 
 .projects-section {
   background: rgba(7, 20, 33, 0.42);
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.project-card {
-  min-height: 245px;
-  padding: 1.25rem;
-  background: linear-gradient(180deg, rgba(13, 29, 46, 0.98), rgba(8, 24, 38, 0.98));
-  border: 1px solid #244c66;
-  border-radius: 11px;
-}
-
-a.project-card {
-  transition: transform 160ms ease, border-color 160ms ease;
-}
-
-a.project-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--cyan);
-}
-
-.project-card h3 {
-  margin: 0;
-}
-
-.project-card .card-top p {
-  margin: 0.16rem 0 0;
-  color: #a8c5d8;
-  font-size: 0.88rem;
-}
-
-.project-card > p {
-  margin: 1.1rem 0 0;
-  color: #b7cbd9;
-}
-
-.status-row {
-  margin-top: 1.2rem;
-  color: #9bd7e3;
-  font-size: 0.82rem;
-}
-
-.status-dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 0.42rem;
-  border-radius: 50%;
-  background: var(--green);
-}
-
-.status-row.planned .status-dot {
-  background: #8cb6cf;
 }
 
 .version {
@@ -692,7 +620,6 @@ a.project-card:hover {
   }
 
   .feature-cards,
-  .project-grid,
   .two-panel-grid {
     grid-template-columns: 1fr;
   }
