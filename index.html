@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Deeb M. — cybersecurity projects, practical security research, and open-source tools.">
-  <meta name="theme-color" content="#07111f">
-  <title>Deeb M. | Cybersecurity Projects</title>
+  <meta name="description" content="Cybersecurity projects, practical security research, and open-source tools by Deeb M.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Cybersecurity Projects | Deeb M.</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -13,167 +13,96 @@
 
   <header class="site-header">
     <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="Deeb M. home">Deeb M.</a>
+      <a class="brand" href="#top" aria-label="Home">Cybersecurity Projects</a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#top">Home</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
-        <a class="nav-github" href="https://github.com/Deeb-M" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/Deeb-M" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="shell hero-grid">
-        <div >
-          <p class="eyebrow">Cybersecurity projects &amp; practical security research</p>
-          <h1>Deeb <span>M.</span></h1>
-          <p class="hero-lead">
-            I build practical cybersecurity tools with Python and Linux, focused on
-            reconnaissance, security testing, automation, and defensive workflows.
-          </p>
-          <div class="button-row">
-            <a class="button button-primary" href="#projects">View My Projects</a>
-            <a class="button button-secondary" href="https://github.com/Deeb-M" target="_blank" rel="noreferrer">GitHub Profile</a>
-          </div>
-        </div>
-
-        <div class="terminal-card" aria-label="Terminal introduction">
-          <div class="terminal-top">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-            <span class="terminal-label">terminal</span>
-          </div>
-          <div class="terminal-body">
-            <p><span class="prompt">$</span> <span class="command">scryx --version</span></p>
-            <p>Scryx 1.1.2</p>
-            <p class="terminal-gap"><span class="prompt">$</span> <span class="command">whoami</span></p>
-            <p>Junior Security Analyst · Python Developer</p>
-            <p class="terminal-gap"><span class="prompt">$</span> <span class="command">status</span></p>
-            <p>Building. Testing. Documenting.<span class="cursor" aria-hidden="true"></span></p>
-          </div>
-        </div>
-      </div>
-      <div class="hero-grid-lines" aria-hidden="true"></div>
+    <section class="hero-banner" id="top" aria-label="NetRecon">
+      <img src="assets/netrecon-header.jpg" alt="NetRecon — Network Reconnaissance & Analysis">
     </section>
 
-    <section class="section featured" id="projects">
+    <section class="intro">
+      <div class="shell intro-inner">
+        <p class="eyebrow">Cybersecurity Projects &amp; Practical Security Research</p>
+        <h1>Building practical security tools through development, testing and hands-on research.</h1>
+        <p>I build Python and Linux security tools focused on reconnaissance, evidence-aware investigation, automation, and repeatable defensive workflows.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="https://github.com/Deeb-M" target="_blank" rel="noreferrer">GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
       <div class="shell">
         <div class="section-heading">
-          <p class="eyebrow">Featured project</p>
-          <div class="heading-line"></div>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Security tools built and tested in practical environments.</h2>
         </div>
 
-        <div class="featured-grid">
-          <article class="project-intro">
-            <div class="project-title-row">
-              <div class="project-mark" aria-hidden="true">S</div>
+        <div class="project-grid">
+          <article class="project-card project-card-primary">
+            <div class="project-top">
+              <span class="project-mark">N</span>
               <div>
-                <h2>Scryx</h2>
-                <p class="project-subtitle">Focused Web Reconnaissance CLI</p>
+                <h3>NetRecon</h3>
+                <p class="project-subtitle">Evidence-Aware Network Investigation</p>
               </div>
             </div>
-
-            <p>
-              Scryx is a Python command-line reconnaissance tool for authorized web security
-              testing. It combines controlled crawling, URL analysis, HTTP checks, scope enforcement,
-              recon intelligence, and structured reporting in one repeatable terminal workflow.
-            </p>
-
-            <div class="badges" aria-label="Scryx technologies">
-              <span>Python</span>
-              <span>Kali Linux</span>
-              <span>CLI</span>
-              <span>Reconnaissance</span>
-              <span>GitHub Actions</span>
-              <span>MIT License</span>
+            <p>NetRecon analyzes Nmap XML and supports a structured workflow from discovery and investigation through evidence collection, analysis, and reporting.</p>
+            <div class="badges">
+              <span>Python</span><span>Nmap XML</span><span>Kali Linux</span><span>Evidence Analysis</span><span>CLI</span>
             </div>
-
-            <div class="release-box">
-              <small>Current release</small>
-              <strong>v1.1.2</strong>
+            <div class="project-actions">
+              <a class="button button-primary" href="https://github.com/Deeb-M/NetRecon" target="_blank" rel="noreferrer">View NetRecon</a>
             </div>
           </article>
 
-          <div class="feature-cards">
-            <article class="feature-card">
-              <span class="feature-icon">⌕</span>
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-mark">S</span>
               <div>
-                <h3>Bounded Crawling</h3>
-                <p>Same-host crawling with controlled depth, page limits, request delays, and conservative defaults.</p>
+                <h3>Scryx</h3>
+                <p class="project-subtitle">Focused Web Reconnaissance CLI</p>
               </div>
-            </article>
-
-            <article class="feature-card">
-              <span class="feature-icon">▤</span>
-              <div>
-                <h3>Recon Intelligence</h3>
-                <p>Combines URL analysis with factual recon leads, suggested next steps, and a route-level Recon Map.</p>
-              </div>
-            </article>
-
-            <article class="feature-card">
-              <span class="feature-icon">↗</span>
-              <div>
-                <h3>HTTP Checks</h3>
-                <p>Performs bounded status and redirect checks and reports broken or failed requests.</p>
-              </div>
-            </article>
-
-            <article class="feature-card">
-              <span class="feature-icon">≡</span>
-              <div>
-                <h3>Scope Controls</h3>
-                <p>Restricts reconnaissance by host, path prefix, excluded paths, and file extensions.</p>
-              </div>
-            </article>
-
-            <article class="feature-card">
-              <span class="feature-icon">▥</span>
-              <div>
-                <h3>Professional Reports</h3>
-                <p>Creates JSON, CSV, and human-readable TXT reports with timestamped scan bundles.</p>
-              </div>
-            </article>
-
-            <article class="feature-card">
-              <span class="feature-icon">◇</span>
-              <div>
-                <h3>Safe Defaults</h3>
-                <p>External hosts are not crawled, redirect scope is enforced, and request limits remain bounded.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="button-row project-buttons">
-          <a class="button button-primary" href="https://github.com/Deeb-M/Scryx" target="_blank" rel="noreferrer">View on GitHub</a>
-          <a class="button button-secondary" href="https://github.com/Deeb-M/Scryx/blob/main/USER_GUIDE.md" target="_blank" rel="noreferrer">Read User Guide</a>
-          <a class="button button-secondary" href="https://github.com/Deeb-M/Scryx/releases/latest" target="_blank" rel="noreferrer">Latest Release</a>
+            </div>
+            <p>Scryx is a Python command-line reconnaissance tool for authorized web security testing, combining bounded crawling, URL analysis, HTTP checks, scope controls, recon intelligence, and structured reporting.</p>
+            <div class="badges">
+              <span>Python</span><span>Web Recon</span><span>HTTP</span><span>Kali Linux</span><span>MIT License</span>
+            </div>
+            <div class="project-actions">
+              <a class="button button-primary" href="https://github.com/Deeb-M/Scryx" target="_blank" rel="noreferrer">View Scryx</a>
+              <a class="button button-secondary" href="https://github.com/Deeb-M/Scryx/blob/main/USER_GUIDE.md" target="_blank" rel="noreferrer">User Guide</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
+    <section class="section section-soft" id="skills">
       <div class="shell">
         <div class="section-heading">
-          <p class="eyebrow">Skills &amp; tools</p>
-          <div class="heading-line"></div>
+          <p class="eyebrow">Skills &amp; Tools</p>
+          <h2>Practical tooling across development and security analysis.</h2>
         </div>
-
         <div class="skills-grid">
           <div class="skill-card"><span>Py</span><strong>Python</strong></div>
-          <div class="skill-card"><span>Li</span><strong>Linux / Kali Linux</strong></div>
+          <div class="skill-card"><span>Li</span><strong>Linux / Kali</strong></div>
           <div class="skill-card"><span>Git</span><strong>Git &amp; GitHub</strong></div>
           <div class="skill-card"><span>Nmap</span><strong>Nmap</strong></div>
           <div class="skill-card"><span>Burp</span><strong>Burp Suite</strong></div>
           <div class="skill-card"><span>SMB</span><strong>SMB / smbclient</strong></div>
           <div class="skill-card"><span>IDS</span><strong>Suricata / Snort</strong></div>
-          <div class="skill-card"><span>Web</span><strong>Web Reconnaissance</strong></div>
-          <div class="skill-card"><span>CLI</span><strong>Command-Line Tools</strong></div>
+          <div class="skill-card"><span>Web</span><strong>Web Recon</strong></div>
+          <div class="skill-card"><span>CLI</span><strong>CLI Tools</strong></div>
         </div>
       </div>
     </section>
@@ -181,25 +110,14 @@
     <section class="section" id="about">
       <div class="shell two-panel-grid">
         <article class="info-panel">
-          <p class="panel-kicker">How I work</p>
-          <p>
-            I build and test security tools in small, verifiable steps, using Python,
-            Linux, and hands-on lab environments.
-          </p>
-          <p>
-            I focus on understanding what the tools are doing, validating results, and
-            documenting workflows so the work is repeatable and useful.
-          </p>
+          <p class="panel-kicker">How I Work</p>
+          <h2>Small, verifiable steps.</h2>
+          <p>I build and test security tools in controlled lab environments, validate what the tools actually observe, and document workflows so the work remains repeatable.</p>
         </article>
-
         <article class="info-panel">
-          <p class="panel-kicker">Current focus</p>
-          <ul class="focus-list">
-            <li>Python security tooling and automation</li>
-            <li>Web reconnaissance and security testing</li>
-            <li>Linux and Kali Linux workflows</li>
-            <li>Network analysis and defensive security</li>
-          </ul>
+          <p class="panel-kicker">Current Focus</p>
+          <h2>Evidence-aware security tooling.</h2>
+          <p>Python automation, network reconnaissance, web security testing, Linux workflows, and practical defensive analysis.</p>
         </article>
       </div>
 
@@ -207,13 +125,8 @@
         <article class="responsible-panel">
           <div class="shield" aria-hidden="true">◇</div>
           <div>
-            <p class="panel-kicker">Responsible security</p>
-            <p>
-              All security projects and demonstrations presented here are intended for
-              authorized testing, education, and defensive security research. Security
-              testing should only be performed on systems you own or where you have
-              explicit permission.
-            </p>
+            <p class="panel-kicker">Responsible Security</p>
+            <p>All security projects and demonstrations presented here are intended for authorized testing, education, and defensive security research. Security testing should only be performed on systems you own or where you have explicit permission.</p>
           </div>
         </article>
       </div>
@@ -222,17 +135,13 @@
 
   <footer class="site-footer">
     <div class="shell footer-grid">
-      <div>
-        <strong class="footer-name">Deeb M.</strong>
-        <p>Cybersecurity • Python • Linux</p>
-      </div>
+      <div><strong>Deeb M.</strong><p>Cybersecurity • Python • Linux</p></div>
       <div class="footer-links">
         <a href="https://github.com/Deeb-M" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/Deeb-M/NetRecon" target="_blank" rel="noreferrer">NetRecon</a>
         <a href="https://github.com/Deeb-M/Scryx" target="_blank" rel="noreferrer">Scryx</a>
       </div>
-      <div class="footer-note">
-        <p>Built and maintained as a hands-on cybersecurity portfolio.</p>
-      </div>
+      <p class="footer-note">Hands-on cybersecurity portfolio.</p>
     </div>
   </footer>
 </body>
